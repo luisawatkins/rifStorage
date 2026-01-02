@@ -1,0 +1,28 @@
+[
+  {
+    "inputs": [
+      { "internalType": "string", "name": "ipfsCid", "type": "string" },
+      { "internalType": "address", "name": "provider", "type": "address" },
+      { "internalType": "uint256", "name": "fileSize", "type": "uint256" },
+      { "internalType": "uint256[]", "name": "billingPeriods", "type": "uint256[]" },
+      { "internalType": "uint256[]", "name": "billingPrices", "type": "uint256[]" },
+      { "internalType": "string", "name": "category", "type": "string" }
+    ],
+    "name": "createStorageRecord",
+    "outputs": [{ "internalType": "bytes32", "name": "", "type": "bytes32" }],
+    "stateMutability": "payable",
+    "type": "function"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      { "indexed": true, "internalType": "bytes32", "name": "recordId", "type": "bytes32" },
+      { "indexed": false, "internalType": "bytes32", "name": "ipfsHash", "type": "bytes32" },
+      { "indexed": false, "internalType": "bytes32", "name": "agreementId", "type": "bytes32" },
+      { "indexed": true, "internalType": "address", "name": "uploader", "type": "address" },
+      { "indexed": false, "internalType": "string", "name": "category", "type": "string" }
+    ],
+    "name": "StorageRecordCreated",
+    "type": "event"
+  }
+]
